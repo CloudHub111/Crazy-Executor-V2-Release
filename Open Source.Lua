@@ -154,3 +154,54 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
         Text = "Copied!"
     })
 end)
+
+-- Toogle Ui
+
+local Open = Instance.new("Frame")
+Open.Size = UDim2.new(0, 30, 0, 30)
+Open.Position = UDim2.new(0, 17, 0, 0)
+Open.BackgroundColor3 = Color3.fromRGB(69, 69, 69)
+Open.BorderColor3 = Color3.new(0, 0, 0)
+Open.BorderSizePixel = 1
+Open.Active = true
+Open.Parent = gui
+Open.Transparency = 0.2
+
+local OpenUi = Instance.new("UICorner")
+OpenUi.CornerRadius = UDim.new(0, 5)
+OpenUi.Parent = Open
+
+local CrazyImageTest = Instance.new("TextButton")
+CrazyImageTest.Size = UDim2.new(0, 30, 0, 30)
+CrazyImageTest.Position = UDim2.new(0, 0, 0, 0)
+CrazyImageTest.BackgroundColor3 = Color3.fromRGB(69, 69, 69)
+CrazyImageTest.Parent = Open
+CrazyImageTest.Text = "✡"
+CrazyImageTest.Transparency = 0.2
+CrazyImageTest.TextColor3 = Color3.fromRGB(78, 78, 78)
+CrazyImageTest.Font = Enum.Font.Arcade
+CrazyImageTest.TextSize = 14
+
+local OpenUi2 = Instance.new("UICorner")
+OpenUi2.CornerRadius = UDim.new(0, 5)
+OpenUi2.Parent = CrazyImageTest
+
+CrazyImageTest.MouseButton1Click:Connect(function()
+Main.Visible = true
+end)
+
+local Toogle = Instance.new("TextButton")
+Toogle.Size = UDim2.new(0, 50, 0, 50)
+Toogle.Position = UDim2.new(0, 550, 0, 0)
+Toogle.BackgroundColor3 = Color3.new(255, 0, 0)
+Toogle.BorderColor3 = Color3.new(0, 0, 0)
+Toogle.BorderSizePixel = 1
+Toogle.Text = "X"
+Toogle.TextColor3 = Color3.new(0, 0, 0)
+Toogle.Font = Enum.Font.Code
+Toogle.Parent = Open
+Toogle.TextSize = 20
+
+Toogle.MouseButton1Click:Connect(function()
+Main.Visible = false
+end)
