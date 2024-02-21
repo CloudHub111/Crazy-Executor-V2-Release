@@ -193,10 +193,10 @@ end)
 local Toogle = Instance.new("TextButton")
 Toogle.Size = UDim2.new(0, 50, 0, 50)
 Toogle.Position = UDim2.new(0, 550, 0, 0)
-Toogle.BackgroundColor3 = Color3.new(255, 0, 0)
+Toogle.BackgroundColor3 = Color3.new(65, 65, 65)
 Toogle.BorderColor3 = Color3.new(0, 0, 0)
 Toogle.BorderSizePixel = 1
-Toogle.Text = "X"
+Toogle.Text = "-"
 Toogle.TextColor3 = Color3.new(0, 0, 0)
 Toogle.Font = Enum.Font.Code
 Toogle.Parent = Main
