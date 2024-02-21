@@ -199,7 +199,7 @@ Toogle.BorderSizePixel = 1
 Toogle.Text = "X"
 Toogle.TextColor3 = Color3.new(0, 0, 0)
 Toogle.Font = Enum.Font.Code
-Toogle.Parent = Open
+Toogle.Parent = Main
 Toogle.TextSize = 20
 
 Toogle.MouseButton1Click:Connect(function()
