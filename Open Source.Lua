@@ -191,9 +191,9 @@ Main.Visible = true
 end)
 
 local Toogle = Instance.new("TextButton")
-Toogle.Size = UDim2.new(0, 50, 0, 50)
+Toogle.Size = UDim2.new(0, 50, 0, 40)
 Toogle.Position = UDim2.new(0, 550, 0, 0)
-Toogle.BackgroundColor3 = Color3.new(65, 65, 65)
+Toogle.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
 Toogle.BorderColor3 = Color3.new(0, 0, 0)
 Toogle.BorderSizePixel = 1
 Toogle.Text = "-"
